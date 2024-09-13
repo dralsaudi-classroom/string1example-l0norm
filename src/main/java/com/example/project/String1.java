@@ -30,11 +30,9 @@ public class String1 {
             append(s.getChar(i));
     }
     public boolean equal(String1 s) {
-        if(str.length!=s.length()){
-            return false;
-        }
-        for (int i =0 ;i<=size;i++){
-            if(this.getChar(i)!=s.getChar(i)){
+        
+        for (int i =0 ;i<=s.length();i++){
+            if(s.getChar(i)!=str[i]){
                 return false;
             }
             
