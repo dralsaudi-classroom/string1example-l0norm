@@ -42,12 +42,14 @@ public class String1 {
         return true;
     }
     public void reverse() {
-        int count =size;
-        char[] tmp = str;
-        for(int i =0;i<=size;i++){
-            str[i] = tmp[count];
 
-            count--;
+        char[] tmp = new char[80];
+
+        for(int i =0;i<=size;i++){
+            tmp[i] = str[size-i];
+
+            
         }
+        str = tmp;
     }
 }
